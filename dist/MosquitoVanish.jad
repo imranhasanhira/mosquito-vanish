@@ -1,0 +1,8 @@
+MIDlet-1: Mosquito Vanish,/images/appicon.png,MosquitoVanish
+MIDlet-Jar-Size: 240484
+MIDlet-Jar-URL: MosquitoVanish.jar
+MIDlet-Name: Mosquito Vanish
+MIDlet-Vendor: Imran Hasan Hira
+MIDlet-Version: 1.1
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0

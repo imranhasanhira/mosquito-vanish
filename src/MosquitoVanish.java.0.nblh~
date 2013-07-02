@@ -1,0 +1,47 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+import javax.microedition.lcdui.Alert;
+import javax.microedition.lcdui.Command;
+import javax.microedition.lcdui.CommandListener;
+import javax.microedition.lcdui.Display;
+import javax.microedition.lcdui.Displayable;
+import javax.microedition.lcdui.Form;
+import javax.microedition.lcdui.List;
+import javax.microedition.midlet.*;
+
+/**
+ * @author Md Imran Hasan
+ */
+public class MosquitoVanish extends MIDlet implements CommandListener {
+
+    Display display;
+    List list;
+
+    public void startApp() {
+        display = Display.getDisplay(this);
+
+        list = new List("Mosquito", List.EXCLUSIVE);
+
+        for (int i = 0; i < 10; i++) {
+            list.append("item-" + i, null);
+        }
+
+        list.setCommandListener(this);
+
+        display.setCurrent(list);
+
+    }
+
+    public void pauseApp() {
+    }
+
+    public void destroyApp(boolean unconditional) {
+    }
+
+    public void commandAction(Command c, Displayable d) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+}
